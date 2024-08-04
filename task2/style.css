@@ -1,0 +1,349 @@
+/* General styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image:url('image.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Makes the background fixed when scrolling */
+    color: rgb(13, 12, 12); /* Ensure text is readable against the background */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a, .dropdown .dropbtn {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.h-txt {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.h-txt span {
+    font-size: 24px;
+    display: block;
+}
+
+.h-txt h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.h-txt a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.h-txt a:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+.package-details {
+    margin-bottom: 40px;
+}
+
+.tourist-spot {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tourist-spot img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.tourist-spot .details {
+    max-width: 600px;
+}
+
+.tourist-spot h3 {
+    margin: 0;
+}
+
+.tourist-spot p {
+    margin: 10px 0 0;
+}
+.contact-details {
+    margin: 20px;
+    color: #0e0e0e;
+}
+
+.contact-details h3 {
+    margin-top: 0;
+    color: #0e0e0e;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #0e0e0e;
+}
+#paris-details {
+        margin: 20px;
+    }
+    
+    .attractions-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .attraction {
+        display: flex;
+        flex: 1;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 600px;
+    }
+    
+    .attraction img {
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .info {
+        padding: 15px;
+        flex: 1;
+    }
+    
+    .info h3 {
+        margin-top: 0;
+    }
+    
+    .info p {
+        margin: 10px 0;
+    }
+    #family-details {
+        margin: 20px;
+    }
+    
+    .package-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .package-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .package-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        flex-basis: calc(33.333% - 20px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .package-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .info {
+        padding: 15px;
+    }
+    
+    .info h3 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+    
+    .info ul {
+        list-style: disc;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    
+    .info p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    
+    @media (max-width: 768px) {
+        .package-item {
+            flex-basis: calc(50% - 20px);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .package-item {
+            flex-basis: 100%;
+        }
+    }
+    #package-details {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    #package-details h2 {
+        margin-top: 0;
+    } 
+    package-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .place {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        max-width: calc(33.333% - 20px);
+    }
+    
+    .package-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .description {
+        padding: 10px 0;
+    }
+    
+    .description h3 {
+        margin: 10px 0;
+    }
+    
+    .overall-details {
+        margin-top: 20px;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+    }
+    
+    @media (max-width: 768px) {
+        .package-info {
+            flex-direction: column;
+        }
+        .place {
+            max-width: 100%;
+        }
+    }
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .package-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 600px;
+    }
+    
+    .package-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .description {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .overall-details {
+        margin-top: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
